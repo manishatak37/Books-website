@@ -1,0 +1,157 @@
+#booktitle
+{
+   padding-left:850px;
+   margin-top:-680px;
+   float:left ;
+   
+}
+
+#image
+{
+ padding:20px;
+}
+
+
+h1 {
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+
+
+
+
+header {
+ background-color: #6c5b3f; 
+ opacity: 0.5;
+ color: #ffd5ad;
+ padding: 10px;
+ text-align: center;
+ /* background-color:#6c5b3f; */
+}
+
+
+
+     #clr {
+ background-color:#6c5b3f;
+ opacity: 0.5;
+ padding: 10px;
+ text-align: center;
+}
+
+a{
+ color:#000000;
+}
+.ttl,.tt2,.tt3,.tt4{
+ display: inline-block;
+ margin: 0 10px;
+ color: #ffd5ad;
+ font-weight: bold;
+ font-size:large
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.title{
+
+font-size: 79px;
+padding: 10px 0px 10px 0px; 
+margin: 0px;
+}
+
+html{
+      scroll-behavior: smooth;}
+         
+      * {
+ padding:0;
+ margin:0;
+}
+
+aside
+{
+ margin-left:-150px;
+}
+
+body
+{background-image: url('billback1.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;}
+
+
+       /* #details
+       {
+        margin-left: -500px;
+       }*/
+       #pi
+       {
+        text-align: center;
+        
+       }
+
+       footer
+       {
+        background-color:rgb(7 181 162)
+       }
+
+       #visa
+       {
+        padding-left: 250px;
+       }
+
+       #ae
+       {
+        padding-left: 100px;
+       }
+
+       #rupay
+       {
+        padding-left: 250px;
+       }
+
+       #master
+       {
+        padding-left: 250px;
+       }
+
+       #paypal
+       {
+        padding-left: 250px;
+       }
+
+       footer h2{
+        text-align: center;
+        text-decoration: underline;
+       }
+
+       #proceed
+       {
+        text-align: center;
+        /* border: 2px solid rgb(255, 255, 255); */
+        padding:5px;
+        max-width:150px ;
+        margin-left: 400px;
+        
+        background-color: #98ffee;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+    
+
+       #end
+       {
+        text-align: center;
+        border: 2px solid black;
+        padding:5px;
+        max-width:150px ;
+        margin-left: 850px;
+       }

@@ -1,0 +1,198 @@
+<!doctype html>
+<title>
+    buy now
+</title>
+<head>
+	<div class="top" id="top">
+      <title>ADD to Cart</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="stylesheet" href="billcss.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="title">✦𝕋ℍ𝔼 †𝔸𝕃𝔼'𝕊 𝕄𝔼ℕ✦</h1>
+	</header>
+
+   <div id='clr'>
+		<h1 class="ttl"><a href="THETALESMEN.HTML">✣ATTIC✣  </a></h1>
+		<h1 class="tt2"><a href="#">✣MOST SATISFIED✣  </a></h1>
+		<h1 class="tt3"><a href="#">✣RECENT APPRISE✣  </a></h1>
+		<h1 class="tt4"><a href="contactustat.html">✣CONTACT US✣</a></h1>
+	</div>
+
+<div id="image">
+      <img class="image" src="Saved Pictures/lastomp.png" alt="Novel 1 " width="550" height="650" class='iconDetails'/>
+   </div>
+   <aside>
+   <div id="booktitle">
+      <h2><big><big><big>Percy Jackson and the Last Olympian</big></big></big></h2><br>
+      <p><h4>Author: Rick Riordan
+      <span>⭐4.5</span></h4>
+      </p>
+      <br> <br> 
+      <div id="desp">
+      <h3><p>Percy Jackson The last olympian</p></h3>
+       <p><big>The Last Olympian is a novel by Rick Riordan, published on May 5, 2009. It is the fifth and final installment in the Percy Jackson and the Olympians series.
+        
+        This conclusion to the saga revolves around Percy Jackson, the son of Poseidon, as he leads his friends in a last stand to protect Mount Olympus and the rest of the world from Kronos and his army of titans and monsters.</p>
+        
+       <p>It was also the #1 USA Today bestseller, the #1 Wall Street Journal bestseller, and #1 Los Angeles Times bestseller. </p></big>
+       </div>
+<br><br><br>
+      <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+      <br> 
+      <h2>
+      <label for="price">Price:</label>
+      <input type="number" id="price" min="750.85" max="750.85" step="0.01" value="750.85" required></h2>
+      <p>
+        <h4>Inclusive of all taxes</h4>
+        </p>
+<br><br>
+<big>
+    <form>
+        <h4><label for="quantity">Quantity:</label></h4>
+        <button type="button" onclick="decrementQuantity()">-</button>
+        <input type="number" id="quantity" min="1" value="1" required>
+        <button type="button" onclick="incrementQuantity()">+</button>
+        <br>
+        </form>
+        <button type="button" onclick="addToCart()">Add to Cart</button>
+    </p>
+
+    <p>Cart Total: <span id="total">0.00</span></p>
+<br>
+    <div id="proceed">
+       <a href="#pi"><h3>Proceed to Payment</h3></a>
+    </div>
+
+    </big>
+    <br><br>
+    <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
+<br><br>
+      <h2><p><u>Note:-</u></p></h2>
+      <big><p>→Free Delivery.</p>
+      <p>→Cash on delivery available.</p>
+      <p>→Maximun no of books orderded at one time is <b><u>10.</u></b></p>
+      <p>→Safety of the product is ensured.</p> </big>
+      </aside>
+   </div>
+   <br><br><br><br><br><br><br><br>
+
+   <div id="pi">
+    <h1>Enter your details</h1>
+    <form>
+    Deliver to:<textarea  name="address" cols="100">
+    </textarea>
+    <br><br>
+    <p>
+<div id="details">
+    <label for="Name">Name:</label>
+			<input type="text" id="Name" name="Name" placeholder="Enter your name">
+    <br><br>
+
+    <label for="Mobile No">Mobile Number:</label>
+<input type="text" id="Name" name="Name" placeholder="Enter your mobile number">
+<br><br>
+
+    <label for="Name">Card Number:</label>
+    <input type="text" id="Name" name="Name" placeholder="Enter Card Number">
+<br><br>
+
+<label for="Name">Expiration Date:</label>
+<input type="text" id="Name" name="Name" placeholder="Enter Expiration Date ">
+<br><br>
+
+<label for="Name">CVV:</label>
+<input type="text" id="Name" name="Name" placeholder="Enter CVV">
+<br><br>
+
+<label for="OTP">OTP:</label>
+<input type="text" id="OTP" name="OTP" placeholder="Enter OTP">
+<br><br>
+    </p>
+
+    Payment method :
+    <select name="pay">
+      <option value="p1">Select method</option>
+      <option value="p2">Cash On Delivery</option>
+      <option value="p3">Credit Card</option>
+      <option value="p4">Debit Card</option>
+      <option value="p5">PayPal</option>
+    </select>
+  </form><br><br>
+  <div id="end">
+  <a href="end.html">Done</a>
+  </div>
+</div>
+    </div>
+</div>
+
+   <footer>
+    <h2>Our payment partners:</h2>
+<table>
+    <tr>
+        <td>
+            <div id="ae">
+                <img src="ae.png">
+            </div>
+
+        </td>
+         <td>
+            <div id="visa">
+                <img src="visa.png">
+            </div>
+
+        </td>
+        <td>
+
+            <div id="master">
+                <img src="master.png">
+            </div>
+        </td>
+        <td>
+            <div id="rupay">
+                <img src="rupay.png">
+            </div>
+            
+        </td>
+        <td>
+            <div id="paypal">
+                <img src="paypal.png">
+            </div>
+            
+        </td>
+    </tr>
+</table>
+</footer>
+
+<script>
+    let cart = [];
+    let total = 0;
+    
+    function incrementQuantity() {
+      const quantity = document.getElementById('quantity');
+      quantity.value = parseInt(quantity.value) + 1;
+    }
+    
+    function decrementQuantity() {
+      const quantity = document.getElementById('quantity');
+      if (quantity.value > 1) {
+        quantity.value = parseInt(quantity.value) - 1;
+      }
+    }
+    
+    function addToCart() {
+      const quantity = parseInt(document.getElementById('quantity').value);
+      const price = parseFloat(document.getElementById('price').value);
+      const item = { quantity: quantity, price: price };
+      cart.push(item);
+      total += quantity * price;
+      document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+      console.log(`Added ${quantity} items to the cart at $${price.toFixed(2)} each. Total cost: $${total.toFixed(2)}`);
+    }
+  </script>
+
+</body>

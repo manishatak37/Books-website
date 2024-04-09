@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#submit-button").click(function(){
+				// Get form data
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var message = $("#message").val();
+				
+				// Validate form data
+				if(name == "" || email == "" || message == ""){
+					alert("Please fill in all fields.");
+				}
+				else{
+					// Send email
+					var url = "mailto:s?subject=Contact Us&body=Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+					window.location.href = url;
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+		<header>
+		<h1 class="title">✦𝕋ℍ𝔼 †𝔸𝕃𝔼'𝕊 𝕄𝔼ℕ✦</h1>
+	</header>
+	<div id='clr'>
+		<h1 class="ttl"><a href="The Tales Men 2.html">✣ATTIC✣  </a></h1>
+		<h1 class="ttl"><a href="The Tales Men 2.html">✣MOST SATISFIED✣  </a></h1>
+		<h1 class="ttl"><a href="The Tales Men 2.html">✣RECENT APPRISE✣  </a></h1>
+		<h1 class="ttl"><a href="The Tales Men 2.html">✣NEWSLETTER✣  </a></h1>
+		<h1 class="ttl"><a href="contact.html">✣CONTACT US✣</a></h1>
+	</div>
+	<div class="disc">
+		<h1>!*******************************************Help Section******************************************!</h1>
+		<h1><b>ADD-TO-CART</b></h1>
+<p>The add-to-cart button is a feature of ecommerce stores that allows customers to choose items to purchase without actually completing the payment.
+To add the item int the cart click on the add to cat button below the product.
+</p>
+
+
+<h1><b>DELIVERY DETAILS:</b></h1>
+<p>For checking the product details :
+1.Go to Your Orders.
+2.Go to the order you want to track.
+3.Select Track Package next to your order.
+4.Select See all updates to view delivery updates.
+</p>
+
+<h1><b>PACKAGE CENTRES</b></h1>
+<p>Instead of having a package delivered to your home or business address, you can select an Web_name hub location. Then, you can pick up your package at a time that suits you.</p>
+
+<p>If all items in your order are eligible, you'll see the option to search for an Web_name Hub location during checkout.</p>
+
+<h1><b>CUSTOMER SERVICE</b></h1>
+<p>To reach 𝕋ℍ𝔼 𝕋𝔸𝕃𝔼'𝕊 𝕄𝔸ℕ customer care phone line, call 1800 3000 9009.</p>
+<p>To chat with a customer service representative, visit Contact Us and select Start chatting.
+We consider each contact an opportunity to advocate for customers and provide support via phone, email and chat 24/7.</p>
+
+<br><br>
+<br>
+<h1><b>Note:</b></h1>
+<p>There's no transaction fee for shipping to an 𝕋ℍ𝔼 𝕋𝔸𝕃𝔼'𝕊 𝕄𝔸ℕ.
+𝕋ℍ𝔼 𝕋𝔸𝕃𝔼'𝕊 𝕄𝔸ℕ Hub locations aren't eligible for Release-Date Delivery.
+ParcelPoint operates 𝕋ℍ𝔼 𝕋𝔸𝕃𝔼'𝕊 𝕄𝔸ℕ Hub locations in Australia. ParcelPoint is a third party that has no affiliation with 𝕋ℍ𝔼 𝕋𝔸𝕃𝔼'𝕊 𝕄𝔸ℕ.</p>
+<p>Orders must be placed within the time frame mentioned on the product .Ohterwise order would note be returned or replaced.</p>
+
+	</div>
+
+	<div class="container">
+		<h1>Contact Us</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name...">
+			
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" placeholder="Enter your email...">
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" placeholder="Enter your message..."></textarea>
+			
+			<button type="button" id="submit-button">Submit</button>
+		</form>
+		<!-- <div class=qa>
+  	  	  	  	!* Here are some frequently asked questions answered for you *!
+  	  	  	  </div> -->
+	</div>
+		<footer>
+		  <h2><p><label for="ThetalesMenReview">Review of The Tales Men:</label></p></h2>
+  <textarea id="w3review" name="w3review" rows="10" cols="50" placeholder="Enter your review here."></textarea>
+    <br>
+  <input type="submit" value="Submit">
+  <h4>© 2023 Copyright </h4>
+  <div class="footer" id="desc">
+  <ul>
+  	<li><a href="https://www.instagram.com/"><img src="instagram.png">Instagram</li></a>
+  	  	<li><a href="https://www.facebook.com/login/"><img src="facebook.png">Facebook</li></a>
+  	  	  	<li><a href="https://twitter.com/home"><img src="twitter.png">Twitter</li></a>
+  	  	  	  	<li><a href="https://in.pinterest.com/"><img src="pinterest.png">Pinterest</li></a>
+  	  	  	  </ul>
+
+  	  	  	  
+</div>
+</footer>
+</body>
+
+<style>
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+}
+footer textarea
+{
+height: 100px;
+width:550px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body
+{background-image: url('images/contact.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;}
+
+
+header 
+{
+    /* background-color: #9a8efff; */
+    color: #f77c08;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+        #clr {
+    background-color:#6c5b3f;
+    opacity: 0.5;
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    color:#ffd5ad;
+}
+.ttl,.tt2,.tt3,.tt4{
+    display: inline-block;
+    margin: 0 10px;
+    color: #92bccc;
+    font-weight: bold;
+    font-size:large
+}
+
+footer {
+        background-color: rgba(0,0,0,.55);
+    color: #ffd5ad;
+    padding: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top:0px;
+
+}
+.footer
+{
+text-align: left;
+margin-top: -130px;
+}
+
+.footer ul li{
+list-style:none;
+}
+
+.footer:hover
+{	color: #271b29;}
+
+.title{
+
+font-size: 79px;
+padding: 10px 0px 10px 0px; 
+margin: 0px;
+}
+.qa
+{color:white;
+text-align: center;
+}
+
+.container
+{
+color:White;
+}
+.disc{
+font-size: 18px;
+COLOR:rgb(110, 190, 233);
+}
+
+.disc p
+{
+text-align:center;
+opacity: 0.9;
+}
+
+.disc h1
+{opacity:0.9;}
+
+html{
+         scroll-behavior: smooth;}
+
+
+</style>
+</html>
